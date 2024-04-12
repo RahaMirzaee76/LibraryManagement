@@ -15,5 +15,17 @@ namespace LibraryManagment.Domain.Core.Books.Entities
         public DateTime UpdateDate { get; set; }
         public bool IsActive { get; set; }
         public bool IsReserved { get; set; }
+        public IList<Reserve> Reserves { get; set; }
+
+        /// <summary>
+        /// Bihavior
+        /// </summary>
+        public void ChangeState()
+        {
+            IsActive = !IsActive;
+        }
+        
     }
+
+  
 }

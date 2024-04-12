@@ -1,13 +1,13 @@
-﻿using LibraryManagment.Domain.Core.Personels.Entities;
+﻿using LibraryManagment.Domain.Core.Books.Entities;
 
 namespace LibraryManagment.Domain.Core.Books.Contracts
 {
     public interface IBookRepository
     {
-        List<Personel> GetAll();
-        Personel GetById(int id);
-        Personel Add(Personel book);
-        Personel Update(Personel book); 
-        Personel Delete(int id);    
+        List<Book> GetAll();
+        Book GetById(int id);
+        Book Add(Book book);
+        Book Update(Book book);
+        Book Delete(int id);    
     }
 }

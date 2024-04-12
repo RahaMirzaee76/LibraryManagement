@@ -8,9 +8,17 @@ namespace LibraryManagment.EndPoint.UI.Controllers
     {
         private readonly IPersonelRepository personelRepo;
 
+
         public PersonelController(IPersonelRepository personelRepository)
         {
             personelRepo = personelRepository;
+        }
+
+        public void ChangeActivity(int id)
+        {
+            Personel personel = personelRepo.GetById(id);
+            personel.IsActive = !personel.IsActive;
+            Personel newPersonel = personelRepo.Update(personel);
         }
         public IActionResult Search()
         {
@@ -19,14 +27,27 @@ namespace LibraryManagment.EndPoint.UI.Controllers
         }
         public IActionResult Register(Personel model)
         {
+            if (model is null)
+            {
+                throw new ArgumentNullException(nameof(model));
+            }
+
+            Personel personel = personelRepo.Add(model);
             return View();
         }
         public IActionResult Update(Personel model)
         {
+            if (model is null)
+            {
+                throw new ArgumentNullException(nameof(model));
+            }
+
+            Personel personel = personelRepo.Update(model);
             return View();
         }
         public IActionResult Delete(int id)
         {
+            Personel personel = personelRepo.Delete(id);
             return View();
         }
     }

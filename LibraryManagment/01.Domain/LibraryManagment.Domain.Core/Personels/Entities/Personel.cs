@@ -1,4 +1,5 @@
-﻿using LibraryManagment.Domain.Core.Common.Entities;
+﻿using LibraryManagment.Domain.Core.Books.Entities;
+using LibraryManagment.Domain.Core.Common.Entities;
 using LibraryManagment.Domain.Core.Common.Enums;
 
 namespace LibraryManagment.Domain.Core.Personels.Entities
@@ -12,5 +13,6 @@ namespace LibraryManagment.Domain.Core.Personels.Entities
         public DateTime ModifyDate { get; set; }
         public Gender Gender { get; set; }
         public DateTime Birthdate { get; set; }
+        public IList<Reserve> Reserves { get; set; }
     }
 }
