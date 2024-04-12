@@ -4,17 +4,17 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace LibraryManagment.EndPoint.UI.Controllers
 {
-    public class BookController : Controller
+    public class PersonelController : Controller
     {
-        private readonly IPersonelRepository bookRepo;
+        private readonly IPersonelRepository personelRepo;
 
-        public BookController(IPersonelRepository bookRepository)
+        public PersonelController(IPersonelRepository personelRepository)
         {
-            bookRepo = bookRepository;
+            personelRepo = personelRepository;
         }
         public IActionResult Search()
         {
-            var result = bookRepo.GetAll().ToList();
+            var result = personelRepo.GetAll().ToList();
             return View(result);
         }
         public IActionResult Register(Personel model)
