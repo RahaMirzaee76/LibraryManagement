@@ -13,6 +13,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LibraryManagment.Domain.Cor
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LibraryManagment.EndPoint.UI", "03.EndPoint\LibraryManagment.EndPoint.UI\LibraryManagment.EndPoint.UI.csproj", "{B76F8617-6323-404A-B74C-CF6E42D2862B}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LibraryManagement.Infrastructure.DAL", "02.Infrastructure\LibraryManagement.Infrastructure.DAL\LibraryManagement.Infrastructure.DAL.csproj", "{4C1DBF5F-16DF-45D2-9520-284FEBC2E0DE}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{B76F8617-6323-404A-B74C-CF6E42D2862B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B76F8617-6323-404A-B74C-CF6E42D2862B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B76F8617-6323-404A-B74C-CF6E42D2862B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4C1DBF5F-16DF-45D2-9520-284FEBC2E0DE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4C1DBF5F-16DF-45D2-9520-284FEBC2E0DE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4C1DBF5F-16DF-45D2-9520-284FEBC2E0DE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4C1DBF5F-16DF-45D2-9520-284FEBC2E0DE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -34,6 +40,7 @@ Global
 	GlobalSection(NestedProjects) = preSolution
 		{DFD5DF71-2E49-4B74-8165-6E93D2250004} = {41712C2D-DB2C-4FBC-8DA3-13600462CFE9}
 		{B76F8617-6323-404A-B74C-CF6E42D2862B} = {F338C632-2A46-4CB8-88DD-E0CB860A884F}
+		{4C1DBF5F-16DF-45D2-9520-284FEBC2E0DE} = {FC6DD8C2-2291-4876-99AF-A526E87D8CA4}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {332932B6-B656-406E-8B87-783B4ACBBD66}
