@@ -1,10 +1,13 @@
+using LibraryManagement.Infrastructure.DAL.Books;
+using LibraryManagement.Infrastructure.DAL.Common;
 using LibraryManagment.Domain.Core.Books.Contracts;
 
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
-//builder.Services.AddScoped<IBookRepository>
+builder.Services.AddDbContext<DatabaseContext>();
+builder.Services.AddScoped<IBookRepository, BookRepository>();
 
 var app = builder.Build();
 
